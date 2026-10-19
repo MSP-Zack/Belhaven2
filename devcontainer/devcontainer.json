@@ -1,0 +1,17 @@
+{
+  "name": "Belhaven Project",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Belhaven Project",
+      "onAutoForward": "notify",
+      "protocol": "http"
+    }
+  },
+  "remoteUser": "vscode"
+}
+
